@@ -68,7 +68,7 @@ class CustomerRepository {
     }
   } 
 
-  async AddToWishlist(customerId, product) {
+  async AddWishlistItem(customerId, product) {
     try {
       const profile = await CustomerModel.findById(customerId).populate('wishlist');
       if (profile) {
