@@ -1,5 +1,5 @@
-const { CustomerModel, AddressModel } = require('./models');
-const { APIError, BadRequestError, STATUS_CODES } = require('../../utils/app-errors');
+const { CustomerModel, AddressModel } = require('../models');
+const { APIError, STATUS_CODES } = require('../../utils/app-errors');
 
 class CustomerRepository {
   async CreateCustomer({ email, password, phone, salt }) {
@@ -156,4 +156,4 @@ class CustomerRepository {
   }
 }
 
-module.exports = CustomerRepository;
+module.exports = new CustomerRepository;

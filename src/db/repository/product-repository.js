@@ -1,5 +1,5 @@
-const { ProductModel }  = require('../../models/product-model');
-const { APIError, BadRequestError} = require('../../utils/app-errors');
+const { ProductModel }  = require('../models/product');
+const { APIError } = require('../../utils/app-errors');
 
 class ProductRepository {
   async CreateProduct({ name, desc, banner, type, unit, price, available, supplier }) {
@@ -58,5 +58,5 @@ class ProductRepository {
   }
 }
 
-module.exports = ProductRepository();
+module.exports = new ProductRepository();
 

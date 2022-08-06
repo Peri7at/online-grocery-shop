@@ -1,5 +1,5 @@
-const { CustomerModel, ProductModel, OrderModel } = require('./models');
-const { APIError, BadRequestError} = require('../../utils/app-errors');
+const { CustomerModel, ProductModel, OrderModel } = require('../models');
+const { APIError } = require('../../utils/app-errors');
 const { v4: uuidv4 } = require('uuid');
 
 class ShoppingRepository {
@@ -48,4 +48,4 @@ class ShoppingRepository {
   }
 }
 
-module.exports = ShoppingRepository();
+module.exports = new ShoppingRepository();
