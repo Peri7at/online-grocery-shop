@@ -29,7 +29,8 @@ class ProductController {
 
   async GetProductById(productId) {
     try {
-      return await this.repository.FindProductById(productId);
+      const product = await this.repository.FindProductById(productId);
+      return FormateData(product);
     } catch (error) {
       throw new APIError('Data Not Found');
     }
