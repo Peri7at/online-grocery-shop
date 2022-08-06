@@ -1,13 +1,14 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const { APP_SECRET } = require('../config');
+require('dotenv').config();
+const APP_SECRET = process.env.APP_SECRET;
 
 module.exports.GenerateSalt = async () => {
   return await bcrypt.genSalt(10);
 }
 
-module.export.GeneratePassword = async (salt, password) => {
+module.exports.GeneratePassword = async (salt, password) => {
   return await bcrypt.hash(password, salt);
 }
 
