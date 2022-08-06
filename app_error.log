@@ -1,0 +1,7 @@
+{"level":"error","message":"Sat Aug 06 2022 21:50:31 GMT+0300 (GMT+03:00)-{}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 21:51:36 GMT+0300 (GMT+03:00)-{}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 21:51:50 GMT+0300 (GMT+03:00)-{}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 21:54:01 GMT+0300 (GMT+03:00)-{}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 22:00:06 GMT+0300 (GMT+03:00)-{\"name\":\"Data Not Found\",\"statusCode\":500,\"isOperational\":true}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 22:05:01 GMT+0300 (GMT+03:00)-{\"name\":\"WHY Data Not Found\",\"statusCode\":500,\"isOperational\":true}","private":true}
+{"level":"error","message":"Sat Aug 06 2022 22:09:12 GMT+0300 (GMT+03:00)-{\"name\":\"Data Not Found\",\"statusCode\":500,\"isOperational\":true}","private":true}

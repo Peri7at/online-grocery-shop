@@ -1,4 +1,4 @@
-const { ProductModel }  = require('../models/product');
+const { ProductModel }  = require('../models');
 const { APIError } = require('../../utils/app-errors');
 
 class ProductRepository {
@@ -58,5 +58,5 @@ class ProductRepository {
   }
 }
 
-module.exports = new ProductRepository();
+module.exports = ProductRepository;
 

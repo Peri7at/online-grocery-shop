@@ -8,8 +8,8 @@ module.exports = async (app) => {
   app.use(express.json());
   app.use(express.urlencoded({extended: true}));
   app.use(express.static(__dirname + '/public'));
-  app.use('/customer', customer);
-  app.use('/products', products);
-  app.use('/shopping', shopping);
+  customer(app)
+  products(app);
+  shopping(app);
   app.use(HandleErrors);
 }

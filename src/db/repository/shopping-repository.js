@@ -48,4 +48,4 @@ class ShoppingRepository {
   }
 }
 
-module.exports = new ShoppingRepository();
+module.exports = ShoppingRepository;

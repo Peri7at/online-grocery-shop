@@ -156,4 +156,4 @@ class CustomerRepository {
   }
 }
 
-module.exports = new CustomerRepository;
+module.exports = CustomerRepository;
